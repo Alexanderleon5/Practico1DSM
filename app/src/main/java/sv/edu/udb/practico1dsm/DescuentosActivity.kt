@@ -26,14 +26,14 @@ class DescuentosActivity : AppCompatActivity() {
             val renta = calcularRenta(salarioBase)
             val salarioNeto = salarioBase - renta - afp - isss
 
-            // Formatear los valores a dos decimales
+
             val formato = DecimalFormat("#.##")
             val afpFormateado = formato.format(afp)
             val isssFormateado = formato.format(isss)
             val rentaFormateada = formato.format(renta)
             val salarioNetoFormateado = formato.format(salarioNeto)
 
-            // Mostrar los resultados formateados
+
             tvResultadoSalario.text = """
                 Nombre: $nombre
                 AFP: $afpFormateado

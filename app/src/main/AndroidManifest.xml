@@ -10,31 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practico1DSM">
 
-        <!-- Actividad Principal -->
         <activity
             android:name=".MainActivity"
-            android:exported="true"> <!-- Agrega android:exported="true" -->
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <!-- Actividad para calcular el promedio -->
         <activity
             android:name=".PromedioActivity"
-            android:exported="false" /> <!-- No es la actividad principal, no necesita intent-filter -->
+            android:exported="false" />
 
-        <!-- Actividad para calcular el salario -->
         <activity
             android:name=".DescuentosActivity"
-            android:exported="false" /> <!-- No es la actividad principal, no necesita intent-filter -->
+            android:exported="false" />
 
-        <!-- Actividad para la calculadora -->
         <activity
             android:name=".CalculadoraActivity"
-            android:exported="false" /> <!-- No es la actividad principal, no necesita intent-filter -->
+            android:exported="false" />
 
     </application>
-
 </manifest>
