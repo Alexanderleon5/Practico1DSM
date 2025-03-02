@@ -5,43 +5,61 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/tvTitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calcula tus descuentos de ley"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="100dp"/>
 
-    <EditText
-        android:id="@+id/etNombreEmpleado"
+
+
+
+    <TextView
+        android:id="@+id/LlbTitulo"
+        android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre del empleado"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:id="@+id/Llbnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+
+        android:text="@string/nombre"/>
+
+
+    <EditText
+        android:id="@+id/TxtNombreEmpleado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
         android:layout_marginBottom="16dp"/>
 
     <EditText
-        android:id="@+id/etSalarioBase"
+        android:id="@+id/TxtSalarioBase"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Salario base"
         android:inputType="numberDecimal"
         android:layout_marginBottom="16dp"/>
 
+
+    <TextView
+        android:id="@+id/TxtResultadoSalario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="Sus descuentos:"/>
+
+
     <Button
-        android:id="@+id/btnCalcularSalario"
+        android:id="@+id/BtnCalcularSalario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calcular Salario"
         android:layout_marginBottom="16dp"/>
 
-    <TextView
-        android:id="@+id/tvResultadoSalario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:text="Resultado aparecerá aquí"/>
+
 
 </LinearLayout>

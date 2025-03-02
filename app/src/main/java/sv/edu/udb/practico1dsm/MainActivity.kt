@@ -1,9 +1,8 @@
-package com.example.tresejercicios
-
+package sv.edu.udb.practico1dsm
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,19 +10,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Botón 1: Navegar a PromedioActivity
-        BtnPromedio.setOnClickListener {
+        val btnPromedio: Button = findViewById(R.id.BtnPromedio)
+        btnPromedio.setOnClickListener {
             val intent = Intent(this, PromedioActivity::class.java)
             startActivity(intent)
         }
 
         // Botón 2: Navegar a DescuentosActivity
-        BtnSalario.setOnClickListener {
+        val btnSalario: Button = findViewById(R.id.BtnSalario)
+        btnSalario.setOnClickListener {
             val intent = Intent(this, DescuentosActivity::class.java)
             startActivity(intent)
         }
 
         // Botón 3: Navegar a CalculadoraActivity
-        BtnCalculadora.setOnClickListener {
+        val btnCalculadora: Button = findViewById(R.id.BtnCalculadora)
+        btnCalculadora.setOnClickListener {
             val intent = Intent(this, CalculadoraActivity::class.java)
             startActivity(intent)
         }

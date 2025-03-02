@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Practico1DSM</string>
+    <string name="nombre">Nombre:</string>
 </resources>

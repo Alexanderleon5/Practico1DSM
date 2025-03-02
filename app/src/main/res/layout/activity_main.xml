@@ -1,52 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:gravity="center"
-    android:padding="50dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginBottom="60dp"
+    android:padding="20dp">
+
 
     <TextView
-        android:id="@+id/tvTitulo"
+        android:id="@+id/LlbTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido al práctico 1"
-        android:textSize="26sp"
+        android:text="Práctico 1 DSM"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginBottom="100dp"/>
+        android:layout_marginBottom="40dp"/>
+
 
 
     <Button
         android:id="@+id/BtnPromedio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:layout_marginBottom="16dp"
-        android:text="Promedio de un estudiante"
+        android:text="Promedio de notas"
+        android:textSize="24sp"
+        android:layout_marginBottom="40dp"/>
 
-        android:padding="25dp"/>
+
 
 
     <Button
         android:id="@+id/BtnSalario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Descuentos de ley"
-        android:textSize="25sp"
-        android:padding="25dp"
-        android:layout_marginBottom="16dp"/>
-
+        android:text="Calculadora de descuentos de salario"
+        android:textSize="24sp"
+        android:layout_marginBottom="40dp"/>
 
     <Button
         android:id="@+id/BtnCalculadora"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:padding="25dp"
+        android:textSize="24sp"
         android:text="Calculadora"/>
 
 </LinearLayout>

@@ -1,13 +1,23 @@
-package com.example.tresejercicios
-
+package sv.edu.udb.practico1dsm
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_promedio.*
 
 class PromedioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_promedio)
+
+        val btnCalcularPromedio: Button = findViewById(R.id.btnCalcularPromedio)
+        val etNombre: EditText = findViewById(R.id.etNombre)
+        val etNota1: EditText = findViewById(R.id.etNota1)
+        val etNota2: EditText = findViewById(R.id.etNota2)
+        val etNota3: EditText = findViewById(R.id.etNota3)
+        val etNota4: EditText = findViewById(R.id.etNota4)
+        val etNota5: EditText = findViewById(R.id.etNota5)
+        val tvResultado: TextView = findViewById(R.id.tvResultado)
 
         btnCalcularPromedio.setOnClickListener {
             val nombre = etNombre.text.toString()
